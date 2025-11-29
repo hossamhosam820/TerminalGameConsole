@@ -1,6 +1,6 @@
 #include "generalutils.hpp"
 #include "mazerunner.hpp" 
-#include "game.hpp"
+#include "pong.hpp"
 #include <iostream>
 int main(int argc, char *argv[]) {
 	Clear_Terminal();

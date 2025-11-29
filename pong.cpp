@@ -3,7 +3,7 @@
 // #include <SDL2/SDL_ttf.h>
 #include <iostream>
 #include <string>
-#include "game.hpp"
+#include "pong.hpp"
 using namespace std;
 // class PlayerScore
 //{
