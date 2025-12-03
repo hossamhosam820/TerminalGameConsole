@@ -1,3 +1,4 @@
+#include "Breakoutgame.hpp"
 #include "generalutils.hpp"
 #include "mazerunner.hpp"
 #include "pong.hpp"
@@ -10,8 +11,8 @@ int main(int argc, char *argv[]) {
   bool running = true;
   while (running) {
     int game_id = 0;
-    std::cout
-        << "What game do you wanna play?\n1-maze runner\t2-pong\t0-quit\n";
+    std::cout << "What game do you wanna play?\n1-maze "
+                 "runner\t2-pong\t3-breakout\t0-quit\n";
     std::cin >> game_id;
     switch (game_id) {
     case 1:
@@ -26,6 +27,12 @@ int main(int argc, char *argv[]) {
       Clear_Terminal();
       std::cout << "\033[38;2;0;255;0mYou just played pong, game by "
                    "BASEL891, i truly wish you had fun!!\033[m\n";
+      break;
+    case 3:
+      init_breakout();
+      Clear_Terminal();
+      std::cout << "\033[38;2;0;255;0mYou just played breakout, game by "
+                   "hossamhosam890, i truly wish you had fun!!\033[m\n";
       break;
     case 0:
       Clear_Terminal();
