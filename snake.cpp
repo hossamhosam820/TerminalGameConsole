@@ -4,7 +4,7 @@
 #include <ctime>
 #include <iostream>
 using namespace std;
-
+// dinmensions of window
 const int ScreenWidth = 800;
 const int ScreenHeight = 600;
 const int cell = 20;
